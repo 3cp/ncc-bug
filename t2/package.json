@@ -1,6 +1,7 @@
 {
   "name": "t2",
   "devDependencies": {
+    "http-server": "^0.12.3",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
