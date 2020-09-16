@@ -31,9 +31,3 @@ The cause: somehow the `__webpack_require__` in `t/dist/index.js` conflicts
 with global var in webpack app t2.
 I conform this error went away by manually rename `__webpack_require__` in
 `t/dist/index.js` to something else.
-
-In my understanding of js syntax, I don't know how this is possible, because
-the `__webpack_require__` in `t/dist/index.js` was inside a function scope.
-
-Unless webpack is doing some code transforming without proper scope analysis
-(I guess it assumes var `__webpack_require__` is the global var).
